@@ -107,7 +107,7 @@ flowchart TD
 
 ### 1. Prerequisites
 - Python 3.10+ (Recommended Python 3.11 - 3.14)
-- [Blender](https://www.blender.org/) 4.0+ installed locally (e.g., `D:\app\blender.exe` or installed in `C:\Program Files\Blender Foundation\`)
+- [Blender](https://www.blender.org/) 5.2+ installed locally (e.g., `D:\app\blender.exe` or installed in `C:\Program Files\Blender Foundation\`)
 - A [Google Gemini API Key](https://aistudio.google.com/)
 
 ---
@@ -116,7 +116,7 @@ flowchart TD
 
 1. Clone or navigate to the repository directory:
    ```powershell
-   cd "D:\ai agent\3d_gen_ai_agent"
+   cd "<folder_name>\3d_gen_ai_agent"
    ```
 
 2. Install dependencies:
@@ -139,7 +139,7 @@ flowchart TD
 2. **Configure your Blender path in `config/settings.yaml`**:
    ```yaml
    blender:
-     executable_path: "D:\\app\\blender.exe"
+     executable_path: "<path>\\blender.exe"
      timeout_seconds: 120
    ```
 
