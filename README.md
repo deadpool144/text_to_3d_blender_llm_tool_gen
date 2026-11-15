@@ -1,10 +1,26 @@
-#  3D Gen AI Agent: Procedural 3D Model Generation Studio
+# 🧊 3D Gen AI Agent: Procedural 3D Model Generation Studio
 
 An end-to-end autonomous AI system that translates natural language descriptions into procedural, production-ready 3D Blender scenes (`.blend`) and WebGL assets (`.glb`) using Google Gemini and LangChain RAG.
 
 ---
 
-##  Key Highlights & Features
+## 📸 Preview & Showcase
+
+<p align="center">
+  <img src="assets/images/ui_preview.png" alt="Streamlit Web Studio Interface" width="85%" />
+</p>
+
+<p align="center">
+  <em>Interactive Web Studio with Dual-Layer AI Pipeline and one-click .blend / .json downloads</em>
+</p>
+
+<p align="center">
+  <img src="assets/images/model_render.png" alt="Rendered 3D Model Output" width="70%" />
+</p>
+
+---
+
+## 🌟 Key Highlights & Features
 
 - **Dual-Layer AI Pipeline**:
   - **Layer 1 (Prompt Describer)**: Analyzes simple/vague user prompts (e.g., *"a wooden table"*) and expands them into structured physical breakdowns (sub-parts, realistic dimensions, primitive choices, and PBR material properties).
