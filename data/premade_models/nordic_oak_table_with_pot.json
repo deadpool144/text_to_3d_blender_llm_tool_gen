@@ -1,0 +1,664 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "id": "nordic_oak_table_with_pot",
+    "name": "Nordic Oak Accent Table with Potted Botanicals",
+    "description": "Minimalist interior decor composition featuring a natural Nordic Oak accent table and a terracotta pot with lush green foliage.",
+    "tags": [
+      "furniture",
+      "decor",
+      "table",
+      "oak",
+      "terracotta",
+      "plant",
+      "interior"
+    ],
+    "category": "furniture",
+    "complexity": "complex",
+    "units": "meters",
+    "up_axis": "Z"
+  },
+  "materials": [
+    {
+      "id": "mat_natural_oak",
+      "name": "Natural Nordic Oak",
+      "base_color": [
+        0.62,
+        0.45,
+        0.28,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.48,
+      "specular": 0.5,
+      "ior": 1.5
+    },
+    {
+      "id": "mat_terracotta_pot",
+      "name": "Fired Terracotta Clay",
+      "base_color": [
+        0.72,
+        0.34,
+        0.2,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.65,
+      "specular": 0.4,
+      "ior": 1.52
+    },
+    {
+      "id": "mat_potting_soil",
+      "name": "Dark Potting Soil",
+      "base_color": [
+        0.12,
+        0.09,
+        0.07,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.95,
+      "specular": 0.1,
+      "ior": 1.45
+    },
+    {
+      "id": "mat_foliage_green",
+      "name": "Botanical Leaf Green",
+      "base_color": [
+        0.16,
+        0.38,
+        0.18,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.38,
+      "specular": 0.6,
+      "ior": 1.45
+    },
+    {
+      "id": "mat_studio_floor",
+      "name": "Warm Studio Floor",
+      "base_color": [
+        0.65,
+        0.64,
+        0.61,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.8,
+      "specular": 0.5,
+      "ior": 1.45
+    }
+  ],
+  "objects": [
+    {
+      "id": "table_pot_root",
+      "name": "Root Assembly Anchor",
+      "geometry": {
+        "kind": "empty"
+      },
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "table_top",
+      "name": "Table Top",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.735
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          1.2,
+          0.8,
+          0.03
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.003,
+          "segments": 3,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_natural_oak"
+    },
+    {
+      "id": "table_apron",
+      "name": "Support Apron",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.69
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          1.1,
+          0.7,
+          0.06
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.0035,
+          "segments": 3,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_natural_oak"
+    },
+    {
+      "id": "table_leg_proto",
+      "name": "Table Leg Prototype",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          0.52,
+          0.32,
+          0.3375
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cylinder",
+        "dimensions": [
+          0.05,
+          0.05,
+          0.675
+        ],
+        "segments": 32,
+        "caps": true
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.002,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_natural_oak"
+    },
+    {
+      "id": "pot_saucer",
+      "name": "Drip Saucer",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.7625
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cylinder",
+        "dimensions": [
+          0.26,
+          0.26,
+          0.025
+        ],
+        "segments": 32,
+        "caps": true
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.003,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_terracotta_pot"
+    },
+    {
+      "id": "pot_body",
+      "name": "Planter Body",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.9125
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "profile",
+        "mode": "lathe",
+        "plane": "XZ",
+        "axis": "Z",
+        "angle_deg": 360,
+        "segments": 36,
+        "closed": false,
+        "points": [
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.08,
+            0.0
+          ],
+          [
+            0.1,
+            0.02
+          ],
+          [
+            0.12,
+            0.24
+          ],
+          [
+            0.115,
+            0.26
+          ]
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "solidify",
+          "thickness": 0.012,
+          "offset": -1,
+          "even_thickness": true
+        },
+        {
+          "type": "bevel",
+          "width": 0.004,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_terracotta_pot"
+    },
+    {
+      "id": "pot_soil",
+      "name": "Soil Layer",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          1.15
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cylinder",
+        "dimensions": [
+          0.22,
+          0.22,
+          0.02
+        ],
+        "segments": 32,
+        "caps": true
+      },
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_potting_soil"
+    },
+    {
+      "id": "plant_core",
+      "name": "Foliage Core Canopy",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          1.35
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "uv_sphere",
+        "dimensions": [
+          0.3,
+          0.3,
+          0.3
+        ],
+        "segments": 24,
+        "rings": 16
+      },
+      "modifiers": [
+        {
+          "type": "subsurf",
+          "levels": 1,
+          "render_levels": 1
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_foliage_green"
+    },
+    {
+      "id": "foliage_sec_1",
+      "name": "Foliage Secondary Cluster A",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          0.08,
+          0.06,
+          1.42
+        ],
+        "rotation_deg": [
+          12.0,
+          15.0,
+          45.0
+        ],
+        "scale": [
+          0.75,
+          0.75,
+          0.75
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "ico_sphere",
+        "dimensions": [
+          0.22,
+          0.22,
+          0.22
+        ],
+        "segments": 2
+      },
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_foliage_green"
+    },
+    {
+      "id": "foliage_sec_2",
+      "name": "Foliage Secondary Cluster B",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          -0.09,
+          -0.07,
+          1.32
+        ],
+        "rotation_deg": [
+          -15.0,
+          25.0,
+          -30.0
+        ],
+        "scale": [
+          0.8,
+          0.8,
+          0.8
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "ico_sphere",
+        "dimensions": [
+          0.24,
+          0.24,
+          0.24
+        ],
+        "segments": 2
+      },
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_foliage_green"
+    },
+    {
+      "id": "foliage_sec_3",
+      "name": "Foliage Secondary Cluster C",
+      "parent": "table_pot_root",
+      "transform": {
+        "location": [
+          -0.07,
+          0.08,
+          1.4
+        ],
+        "rotation_deg": [
+          20.0,
+          -10.0,
+          15.0
+        ],
+        "scale": [
+          0.65,
+          0.65,
+          0.65
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "ico_sphere",
+        "dimensions": [
+          0.2,
+          0.2,
+          0.2
+        ],
+        "segments": 2
+      },
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_foliage_green"
+    }
+  ],
+  "duplicates": [
+    {
+      "id": "table_legs_dup",
+      "source": "table_leg_proto",
+      "linked": true,
+      "include_source": true,
+      "pattern": {
+        "type": "explicit",
+        "transforms": [
+          {
+            "location": [
+              0.52,
+              0.32,
+              0.3375
+            ],
+            "rotation_deg": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "location": [
+              -0.52,
+              0.32,
+              0.3375
+            ],
+            "rotation_deg": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "location": [
+              0.52,
+              -0.32,
+              0.3375
+            ],
+            "rotation_deg": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "location": [
+              -0.52,
+              -0.32,
+              0.3375
+            ],
+            "rotation_deg": [
+              0,
+              0,
+              0
+            ],
+            "scale": [
+              1,
+              1,
+              1
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "scene": {
+    "lighting_preset": "three_point",
+    "camera": {
+      "auto_frame": true,
+      "view_preset": "three_quarter",
+      "margin": 1.3
+    },
+    "ground": {
+      "enabled": true,
+      "size_m": 8.0,
+      "z_offset": 0.0,
+      "material": "mat_studio_floor",
+      "shadow_catcher": false
+    }
+  },
+  "export": {
+    "formats": [
+      "blend",
+      "glb"
+    ],
+    "apply_modifiers": true,
+    "include_materials": true
+  }
+}

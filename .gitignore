@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Environment secrets (NEVER commit API keys!)
+.env
+.env.local
+
+# Vector Database (Local persistent indices)
+vectorstore/chroma_db/
+vectorstore/faiss_index/
+
+# Generated Outputs
+outputs/json-file/*
+!outputs/json-file/.gitkeep
+outputs/blender-files/*
+!outputs/blender-files/.gitkeep
+
+# Streamlit local state
+.streamlit/secrets.toml
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store

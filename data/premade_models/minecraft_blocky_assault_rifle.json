@@ -1,0 +1,477 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "id": "minecraft_blocky_assault_rifle",
+    "name": "[MINECRAFT] Blocky Assault Rifle",
+    "description": "A fully voxel-inspired or block-built tactical firearm constructed entirely from rigid, axis-aligned and angled rectangular prisms (cubes).",
+    "tags": [
+      "weapon",
+      "rifle",
+      "minecraft",
+      "voxel",
+      "prop",
+      "stylized"
+    ],
+    "category": "prop",
+    "complexity": "complex",
+    "units": "meters",
+    "up_axis": "Z"
+  },
+  "materials": [
+    {
+      "id": "mat_gunmetal",
+      "name": "Gunmetal Voxel",
+      "base_color": [
+        0.25,
+        0.27,
+        0.3,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6
+    },
+    {
+      "id": "mat_receiver_gray",
+      "name": "Neutral Light Gray",
+      "base_color": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.6
+    },
+    {
+      "id": "mat_dark_stock",
+      "name": "Dark Tactical Stock",
+      "base_color": [
+        0.15,
+        0.15,
+        0.15,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7
+    },
+    {
+      "id": "mat_magazine",
+      "name": "Magazine Dark Steel",
+      "base_color": [
+        0.2,
+        0.2,
+        0.22,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.5
+    }
+  ],
+  "objects": [
+    {
+      "id": "receiver_main",
+      "name": "Receiver & Main Body Assembly",
+      "parent": null,
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.25,
+          1.5,
+          0.35
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_receiver_gray"
+    },
+    {
+      "id": "side_armor_left",
+      "name": "Side Armor Plate Left",
+      "parent": "receiver_main",
+      "transform": {
+        "location": [
+          0.14,
+          0.0,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.03,
+          1.4,
+          0.3
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_gunmetal"
+    },
+    {
+      "id": "side_armor_right",
+      "name": "Side Armor Plate Right",
+      "parent": "receiver_main",
+      "transform": {
+        "location": [
+          -0.14,
+          0.0,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.03,
+          1.4,
+          0.3
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_gunmetal"
+    },
+    {
+      "id": "top_rail",
+      "name": "Top Rail & Sight Mount",
+      "parent": "receiver_main",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.2
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.15,
+          1.2,
+          0.06
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_gunmetal"
+    },
+    {
+      "id": "barrel_extension",
+      "name": "Barrel Extension",
+      "parent": "receiver_main",
+      "transform": {
+        "location": [
+          0.0,
+          1.4,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.15,
+          1.4,
+          0.15
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_gunmetal"
+    },
+    {
+      "id": "muzzle_brake",
+      "name": "Muzzle Brake / Flash Hider",
+      "parent": "barrel_extension",
+      "transform": {
+        "location": [
+          0.0,
+          0.8,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          25.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.18,
+          0.3,
+          0.18
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_gunmetal"
+    },
+    {
+      "id": "stock_assembly",
+      "name": "Buttstock & Cheek Rest",
+      "parent": "receiver_main",
+      "transform": {
+        "location": [
+          0.0,
+          -1.1,
+          -0.1
+        ],
+        "rotation_deg": [
+          22.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.2,
+          0.9,
+          0.45
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_dark_stock"
+    },
+    {
+      "id": "pistol_grip",
+      "name": "Pistol Grip",
+      "parent": "receiver_main",
+      "transform": {
+        "location": [
+          0.0,
+          -0.4,
+          -0.4
+        ],
+        "rotation_deg": [
+          -15.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.12,
+          0.18,
+          0.45
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_dark_stock"
+    },
+    {
+      "id": "box_magazine",
+      "name": "Box Magazine",
+      "parent": "receiver_main",
+      "transform": {
+        "location": [
+          0.0,
+          0.3,
+          -0.55
+        ],
+        "rotation_deg": [
+          -10.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.14,
+          0.45,
+          0.7
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_magazine"
+    },
+    {
+      "id": "front_sight",
+      "name": "Front Iron Sight Post",
+      "parent": "barrel_extension",
+      "transform": {
+        "location": [
+          0.0,
+          0.6,
+          0.12
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.06,
+          0.06,
+          0.15
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_gunmetal"
+    },
+    {
+      "id": "rear_sight",
+      "name": "Rear Iron Sight Post",
+      "parent": "top_rail",
+      "transform": {
+        "location": [
+          0.0,
+          -0.5,
+          0.08
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.08,
+          0.08,
+          0.12
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_gunmetal"
+    }
+  ],
+  "scene": {
+    "lighting_preset": "three_point",
+    "camera": {
+      "auto_frame": true,
+      "view_preset": "three_quarter",
+      "margin": 1.3
+    },
+    "ground": {
+      "enabled": true,
+      "shadow_catcher": true
+    }
+  },
+  "export": {
+    "formats": [
+      "blend",
+      "glb"
+    ],
+    "apply_modifiers": true,
+    "include_materials": true
+  }
+}

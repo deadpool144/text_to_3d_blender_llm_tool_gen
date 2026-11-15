@@ -1,0 +1,752 @@
+{
+  "schema_version": "1.0.0",
+  "meta": {
+    "id": "classic_dark_walnut_bookshelf",
+    "name": "Classic Dark Walnut Bookshelf with Books",
+    "description": "A classic dark walnut bookshelf filled with curated colored books on multiple tiers, modeled with precise wooden dimensions, subtle bevels, and a complete studio setup.",
+    "tags": [
+      "furniture",
+      "bookshelf",
+      "wood",
+      "walnut",
+      "books",
+      "decor"
+    ],
+    "category": "furniture",
+    "complexity": "intermediate",
+    "units": "meters",
+    "up_axis": "Z"
+  },
+  "materials": [
+    {
+      "id": "mat_walnut",
+      "name": "Dark Walnut Wood",
+      "description": "Deep brown satin wood finish",
+      "base_color": [
+        0.23,
+        0.16,
+        0.13,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.45,
+      "specular": 0.5,
+      "ior": 1.5
+    },
+    {
+      "id": "mat_book_navy",
+      "name": "Navy Book Cover",
+      "base_color": [
+        0.11,
+        0.18,
+        0.26,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.85,
+      "specular": 0.3,
+      "ior": 1.45
+    },
+    {
+      "id": "mat_book_maroon",
+      "name": "Maroon Book Cover",
+      "base_color": [
+        0.29,
+        0.08,
+        0.15,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.85,
+      "specular": 0.3,
+      "ior": 1.45
+    },
+    {
+      "id": "mat_book_green",
+      "name": "Forest Green Book Cover",
+      "base_color": [
+        0.13,
+        0.22,
+        0.17,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.85,
+      "specular": 0.3,
+      "ior": 1.45
+    },
+    {
+      "id": "mat_book_mustard",
+      "name": "Mustard Book Cover",
+      "base_color": [
+        0.76,
+        0.61,
+        0.22,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.85,
+      "specular": 0.3,
+      "ior": 1.45
+    },
+    {
+      "id": "mat_floor",
+      "name": "Studio Floor",
+      "base_color": [
+        0.62,
+        0.62,
+        0.6,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.8,
+      "specular": 0.3,
+      "ior": 1.45
+    }
+  ],
+  "objects": [
+    {
+      "id": "bookshelf_root",
+      "name": "Bookshelf Root",
+      "geometry": {
+        "kind": "empty"
+      },
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "id": "side_panel_left",
+      "name": "Left Side Panel",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          -0.44,
+          0.0,
+          0.9
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.02,
+          0.28,
+          1.8
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.002,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_walnut"
+    },
+    {
+      "id": "side_panel_right",
+      "name": "Right Side Panel",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          0.44,
+          0.0,
+          0.9
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.02,
+          0.28,
+          1.8
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.002,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_walnut"
+    },
+    {
+      "id": "top_panel",
+      "name": "Top Panel (Crown)",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          1.79
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.94,
+          0.3,
+          0.02
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.002,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_walnut"
+    },
+    {
+      "id": "back_panel",
+      "name": "Back Panel Enclosure",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.1375,
+          0.9
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.86,
+          0.005,
+          1.76
+        ]
+      },
+      "shading": {
+        "smooth": false
+      },
+      "material": "mat_walnut"
+    },
+    {
+      "id": "shelf_1",
+      "name": "Shelf Tier 1",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.1
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.86,
+          0.27,
+          0.02
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.002,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_walnut"
+    },
+    {
+      "id": "shelf_2",
+      "name": "Shelf Tier 2",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.43
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.86,
+          0.27,
+          0.02
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.002,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_walnut"
+    },
+    {
+      "id": "shelf_3",
+      "name": "Shelf Tier 3",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          0.76
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.86,
+          0.27,
+          0.02
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.002,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_walnut"
+    },
+    {
+      "id": "shelf_4",
+      "name": "Shelf Tier 4",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          1.09
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.86,
+          0.27,
+          0.02
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.002,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_walnut"
+    },
+    {
+      "id": "shelf_5",
+      "name": "Shelf Tier 5",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          0.0,
+          0.0,
+          1.42
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.86,
+          0.27,
+          0.02
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.002,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_walnut"
+    },
+    {
+      "id": "book_proto_navy",
+      "name": "Navy Book Prototype",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          -0.35,
+          0.02,
+          0.235
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.045,
+          0.2,
+          0.23
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.0015,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_book_navy"
+    },
+    {
+      "id": "book_proto_maroon",
+      "name": "Maroon Book Prototype",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          -0.29,
+          0.02,
+          0.235
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.038,
+          0.2,
+          0.25
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.0015,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_book_maroon"
+    },
+    {
+      "id": "book_proto_green",
+      "name": "Forest Green Book Prototype",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          -0.23,
+          0.02,
+          0.235
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.052,
+          0.2,
+          0.22
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.0015,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_book_green"
+    },
+    {
+      "id": "book_proto_mustard",
+      "name": "Mustard Book Prototype",
+      "parent": "bookshelf_root",
+      "transform": {
+        "location": [
+          -0.16,
+          0.02,
+          0.235
+        ],
+        "rotation_deg": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "scale": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "geometry": {
+        "kind": "primitive",
+        "shape": "cube",
+        "dimensions": [
+          0.042,
+          0.2,
+          0.24
+        ]
+      },
+      "modifiers": [
+        {
+          "type": "bevel",
+          "width": 0.0015,
+          "segments": 2,
+          "limit": "angle",
+          "angle_deg": 30
+        }
+      ],
+      "shading": {
+        "smooth": true
+      },
+      "material": "mat_book_mustard"
+    }
+  ],
+  "duplicates": [
+    {
+      "id": "dup_books_tier2_navy",
+      "source": "book_proto_navy",
+      "linked": true,
+      "include_source": true,
+      "pattern": {
+        "type": "linear",
+        "count": 3,
+        "offset": [
+          0.22,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "id": "dup_books_tier3_mixed",
+      "source": "book_proto_maroon",
+      "linked": true,
+      "include_source": true,
+      "pattern": {
+        "type": "linear",
+        "count": 4,
+        "offset": [
+          0.18,
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "scene": {
+    "lighting_preset": "three_point",
+    "camera": {
+      "auto_frame": true,
+      "view_preset": "three_quarter",
+      "margin": 1.3
+    },
+    "ground": {
+      "enabled": true,
+      "size_m": 20.0,
+      "z_offset": 0.0,
+      "material": "mat_floor",
+      "shadow_catcher": false
+    }
+  },
+  "export": {
+    "formats": [
+      "blend",
+      "glb"
+    ],
+    "apply_modifiers": true,
+    "include_materials": true,
+    "include_scene": false
+  }
+}
