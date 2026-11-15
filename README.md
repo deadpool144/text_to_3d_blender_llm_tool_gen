@@ -116,7 +116,7 @@ flowchart TD
 
 1. Clone or navigate to the repository directory:
    ```powershell
-   cd "<folder_name>\3d_gen_ai_agent"
+   cd "<folder_name>\text_to_3d_blender_llm_tool_gen"
    ```
 
 2. Install dependencies:
